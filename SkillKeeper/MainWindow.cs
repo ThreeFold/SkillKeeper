@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using Moserware.Skills;
 using Moserware.Skills.TrueSkill;
 using Fizzi.Libraries.ChallongeApiWrapper;
+using System.Globalization;
 
 namespace SkillKeeper
 {
@@ -420,6 +421,7 @@ namespace SkillKeeper
                 foreach (XElement m in xEle.Element("Matches").Elements("Match"))
                 {
                     Match match = new Match();
+                    //match.Timestamp = DateTime.ParseExact(m.Attribute("Timestamp").Value, "DD-MM-YYYY HH:mm:ss", new CultureInfo("en-US"));
                     match.Timestamp = DateTime.Parse(m.Attribute("Timestamp").Value);
                     match.Order = UInt32.Parse(m.Attribute("Order").Value);
                     if (m.Attribute("Tournament") != null)
