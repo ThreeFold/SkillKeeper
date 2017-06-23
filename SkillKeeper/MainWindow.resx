@@ -2149,7 +2149,11 @@
 </value>
   </data>
   <data name="textBox1.Text" xml:space="preserve">
-    <value>v1.1.0.2 (03/28/2017)
+    <value>v1.1.0.3 (6/22/2017)
+- Updated API to match SmashGG (_ThreeFold)
+- Note: You will not be able to use previous SkillKeeper files, please re-import your tournaments if they are necessary
+
+v1.1.0.2 (03/28/2017)
 - Fixed various importing and saving bus. (_ThreeFold)
 - Adjusted compatibility issues of saved files with older versions of SkillKeeper.
 
